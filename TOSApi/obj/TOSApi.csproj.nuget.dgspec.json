@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TOSApi\\TOSApi.csproj": {}
+    "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TosAPI\\TosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TOSApi\\TOSApi.csproj": {
+    "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TosAPI\\TosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TOSApi\\TOSApi.csproj",
-        "projectName": "TOSApi",
-        "projectPath": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TOSApi\\TOSApi.csproj",
+        "projectUniqueName": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TosAPI\\TosAPI.csproj",
+        "projectName": "TosAPI",
+        "projectPath": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TosAPI\\TosAPI.csproj",
         "packagesPath": "C:\\Users\\raffa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TOSApi\\obj\\",
+        "outputPath": "C:\\Users\\raffa\\Desktop\\TOS\\repository\\TosAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,20 +50,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[8.1.1, )"
@@ -80,6 +66,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[9.0.300-preview.0.25177.5, 9.0.300-preview.0.25177.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

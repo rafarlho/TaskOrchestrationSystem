@@ -1,6 +1,0 @@
-@TOSApi_HostAddress = http://localhost:5121
-
-GET {{TOSApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

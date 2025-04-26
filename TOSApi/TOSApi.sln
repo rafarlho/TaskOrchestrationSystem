@@ -1,8 +1,9 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
+VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOSApi", "TOSApi.csproj", "{3E5BEF87-7CD6-D00A-F6F4-8CD9D307CB94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TosAPI", "TosAPI.csproj", "{B1FFA86E-6044-4358-9544-28AB4E543773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3E5BEF87-7CD6-D00A-F6F4-8CD9D307CB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E5BEF87-7CD6-D00A-F6F4-8CD9D307CB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E5BEF87-7CD6-D00A-F6F4-8CD9D307CB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E5BEF87-7CD6-D00A-F6F4-8CD9D307CB94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FFA86E-6044-4358-9544-28AB4E543773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FFA86E-6044-4358-9544-28AB4E543773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FFA86E-6044-4358-9544-28AB4E543773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FFA86E-6044-4358-9544-28AB4E543773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C413E85C-7BAD-4E95-B199-E552E5981C0F}
+		SolutionGuid = {3A572620-A4EB-45D6-A050-778C3B649A69}
 	EndGlobalSection
 EndGlobal
