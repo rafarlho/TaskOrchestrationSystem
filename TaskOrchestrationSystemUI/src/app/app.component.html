@@ -1,0 +1,11 @@
+@if(auth.isAuthenticated$ | async) {
+  <button (click)="auth.logout()">
+    Log out
+  </button>
+} @else { 
+  <button (click)="auth.loginWithRedirect()">Log in</button>
+}
+
+  <button (click)="clickedButton()">Get my info</button>
+  <button (click)="getOrganizations()">Get organizations</button>
+  <button (click)="getActiveOrganizations()">Get active organizations</button>
