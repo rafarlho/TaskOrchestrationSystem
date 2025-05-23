@@ -1,0 +1,11 @@
+{
+    "api": {
+        "tosAPI":"https://localhost:44354/"
+    },
+    "auth0": {
+        "domain":"dev-8d83f63muen50v2p.us.auth0.com",
+        "clientId":"GWn4IlA7r1RXaErWaiyeWyJZNT9BfCGS",
+        "audience": "https://tos/api"
+    }
+
+}
