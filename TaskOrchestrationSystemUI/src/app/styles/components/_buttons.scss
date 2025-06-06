@@ -1,0 +1,20 @@
+@use '../variables/variables.scss' as var;
+@use "@angular/material" as mat;
+@use "sass:meta";
+@use "sass:string";
+
+@mixin button() {
+    @each $variant in var.$list {
+        @include list-colors($variant)
+    }
+}
+
+@mixin list-colors($variant) {
+    .button-#{$variant} {
+        @if $variant != 'error' {
+            @include mat.fab-color(var.$theme, $color-variant: $variant);
+        }
+        @include mat.button-color(var.$theme, $color-variant: $variant);
+        @include mat.icon-button-color(var.$theme, $color-variant: $variant);
+    }
+}

@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+@use './_theme-colors' as theme-colors; 
+
+$light-theme: mat.define-theme((
+    color: (
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette,
+        theme-type: light,
+    ),
+    typography: (
+        plain-family: 'Lato'
+    )
+));
+
+$dark-theme: mat.define-theme((
+    color: (
+        primary: theme-colors.$primary-palette,
+        tertiary: theme-colors.$tertiary-palette,
+        theme-type: dark,
+    ),
+    typography: (
+        plain-family: 'Lato'
+    )
+));

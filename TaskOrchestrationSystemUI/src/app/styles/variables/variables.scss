@@ -1,0 +1,12 @@
+@use "@angular/material" as mat;
+@use 'sass:list';
+@use "../theme/theme" as theme;
+
+$list: primary,secondary,tertiary,error;
+$theme: theme.$light-theme !default;
+$is-light-theme: true !default;
+
+@mixin set-theme($is-light,$theme-schema) {
+    $theme: $theme-schema !global;
+    $is-light-theme: $is-light !global;
+}

@@ -1,0 +1,23 @@
+@use "@angular/material" as mat;
+@use "../_generic.scss";
+@use "./theme" as theme;
+@use "./components";
+@include mat.core();
+
+@mixin base() {
+    html {
+        @include mat.all-component-themes(theme.$light-theme);
+
+        body {
+            font-family: Lato !important;
+
+            &.light-theme {
+                @include components.components-theme(false, theme.$dark-theme)
+            }
+            &.dark-theme {
+                @include mat.all-component-colors(theme.$dark-theme);
+                @include components.components-theme(false, theme.$dark-theme)
+            }
+        }
+    }
+}
