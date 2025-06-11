@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { ToolbarComponent } from "../toolbar/toolbar.component";
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'tos-sidenav',
@@ -12,7 +13,8 @@ import { ToolbarComponent } from "../toolbar/toolbar.component";
     MatButtonModule,
     MatIconModule,
     ToolbarComponent,
-    MatDividerModule
+    MatDividerModule,
+    TranslocoPipe
 ],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'

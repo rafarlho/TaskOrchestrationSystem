@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { provideTranslocoScope } from '@jsverse/transloco';
 
 export const routes: Routes = [
     {
@@ -8,7 +9,10 @@ export const routes: Routes = [
     },
     {
         path: 'main-page', 
-        loadComponent: () => import('./pages/main-page/main-page.component').then(c => c.MainPageComponent)
+        loadComponent: () => import('./pages/main-page/main-page.component').then(c => c.MainPageComponent),
+        providers : [
+            provideTranslocoScope({scope:'main-page', alias: 'MAIN_PAGE'})
+        ]
     },
     
 ];

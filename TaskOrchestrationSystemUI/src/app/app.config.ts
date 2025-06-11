@@ -1,10 +1,12 @@
-import { ApplicationConfig, provideAppInitializer, provideZoneChangeDetection, inject } from '@angular/core';
+import { ApplicationConfig, provideAppInitializer, provideZoneChangeDetection, inject, isDevMode } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideAuth0, AuthClientConfig, authHttpInterceptorFn } from '@auth0/auth0-angular';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { ConfigService } from './services/ConfigService/config.service';
 import { routes } from './app.routes';
 import { tap } from 'rxjs';
+import { TranslocoHttpLoader } from './transloco-loader';
+import { provideTransloco } from '@jsverse/transloco';
 
 export function configInitializerFactory() {
   const configService = inject(ConfigService);
@@ -39,6 +41,16 @@ export const appConfig: ApplicationConfig = {
       }
     }),
     provideAppInitializer(configInitializerFactory),
-    provideHttpClient(withInterceptors([authHttpInterceptorFn])),
+    provideHttpClient(withInterceptors([authHttpInterceptorFn])), 
+    provideHttpClient(), 
+    provideTransloco({
+        config: { 
+          availableLangs: ['en', 'pt'],
+          defaultLang: 'pt',
+          reRenderOnLangChange: true,
+          prodMode: !isDevMode(),
+        },
+        loader: TranslocoHttpLoader
+      }),
   ],
 };
