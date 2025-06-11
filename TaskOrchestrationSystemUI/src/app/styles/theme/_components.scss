@@ -1,9 +1,7 @@
 @use "../variables/variables.scss" as var;
-@use "../components/side-nav";
 @use "../components/buttons";
 
 @mixin components-theme($is-light-theme:true,$theme-schema) {
     @include var.set-theme($is-light-theme,$theme-schema);
-    @include side-nav.persistent-side-nav();
     @include buttons.button();
 }

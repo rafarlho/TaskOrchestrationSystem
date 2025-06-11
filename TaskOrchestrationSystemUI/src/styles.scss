@@ -1,35 +1,35 @@
 @use './app/styles/custom-theme.scss';
-
+@import "tailwindcss";
 html, body { height: 100%; width: 100%;}
 body { 
   margin: 0px; 
   font-family: Lato
 }
 
-.mat-drawer:not(.mat-drawer-opened) {
-    z-index: 2;
-    margin-left: 0;
-    width: 4rem;
-    visibility: visible !important;
-    transition: transform 0.5s ease 0.1s, opacity 0.7s ease 0.2s;
-    transform: translateX(0);
+// .mat-drawer:not(.mat-drawer-opened) {
+//     z-index: 2;
+//     margin-left: 0;
+//     width: 4rem;
+//     visibility: visible !important;
+//     transition: transform 0.5s ease 0.1s, opacity 0.7s ease 0.2s;
+//     transform: translateX(0);
 
-}
-mat-drawer-content {
-    overflow: hidden;
-}
+// }
+// mat-drawer-content {
+//     overflow: hidden;
+// }
 
-.start {
-    margin-left: 60px;
-}
+// .start {
+//     margin-left: 60px;
+// }
 
-.end {
-    margin-right:60px
-}
+// .end {
+//     margin-right:60px
+// }
 
-.side-nav {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: red;
-}
+// .side-nav {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     background: red;
+// }

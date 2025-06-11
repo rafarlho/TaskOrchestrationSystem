@@ -12,7 +12,7 @@
             font-family: Lato !important;
 
             &.light-theme {
-                @include components.components-theme(false, theme.$dark-theme)
+                @include components.components-theme(true, theme.$light-theme)
             }
             &.dark-theme {
                 @include mat.all-component-colors(theme.$dark-theme);
