@@ -1,0 +1,16 @@
+
+<mat-toolbar class="w-full flex flex-row !p-0 justify-between">
+    <div class="fle">
+        <button mat-icon-button (click)="emitNavClick.emit()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <img src="../../../../public/images/TOS_logo.png" />
+        <span>My App</span>
+    </div>
+    <div class="pr-1">
+        <button mat-icon-button (click)="themeService.toggleTheme(themeService.isDarkTheme())">
+            <mat-icon>{{themeService.isDarkTheme() ? 'light_mode':'dark_mode' }}</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>

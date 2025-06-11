@@ -1,4 +1,4 @@
-@if(auth.isAuthenticated$ | async) {
+<!-- @if(auth.isAuthenticated$ | async) {
   <button (click)="auth.logout()">
     Log out
   </button>
@@ -9,3 +9,11 @@
   <button (click)="clickedButton()">Get my info</button>
   <button (click)="getOrganizations()">Get organizations</button>
   <button (click)="getActiveOrganizations()">Get active organizations</button>
+
+  <button mat-flat-button >Basic</button> -->
+  <!-- <router-outlet></router-outlet> -->
+  <div class="h-dvh w-dvw">
+    <router-outlet></router-outlet>
+    
+  </div>
+  

@@ -1,0 +1,20 @@
+<mat-drawer-container class="h-dvh w-dvw" autosize>
+    <mat-drawer #drawer fixedInViewPort="true" mode="side">
+        <div>Ola!!!</div>
+        <div>Ola!!!</div>
+        <div>Ola!!!</div>
+        <div>Ola!!!</div>
+    </mat-drawer>
+    
+    <div class="flex h-full w-full flex-col">
+        <tos-toolbar (emitNavClick)="drawer.toggle()"></tos-toolbar>
+        <mat-divider></mat-divider>
+        <div class="flex grow w-full">
+
+        </div>
+        <mat-divider></mat-divider>
+        <div class="w-full min-h-[30px]">
+            footer
+        </div>
+    </div>
+</mat-drawer-container>
